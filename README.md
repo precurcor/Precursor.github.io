@@ -1,2 +1,9 @@
-# Precursor.github.io
-The precursor to the internets sites.
+# Jay Barker
+## sothals 
+- sanpchaat
+- discord
+- instagram
+- non
+
+## More stuff
+- i like you
