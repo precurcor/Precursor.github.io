@@ -2,8 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('purityTestForm');
     const questionsContainer = document.getElementById('questions');
     const questions = [
-        "Have you ever held hands romantically?",
-        // Add more questions here
+        "Held hands romantically?",
+        "Been on a date?",
+        "Been in a relationship?",
+        "Danced without leaving room for Jesus?",
+        "Kissed a non-family member?"
     ];
 
     // Generate questions dynamically
@@ -28,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadData() {
         const name = nameInput.value;
         if (!name) return;
-        
+
         // Replace with actual code to read CSV
         fetch('data.csv')
             .then(response => response.text())
@@ -50,10 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
         formData.forEach((value, key) => {
             data[key] = value === 'on';
         });
-        
-        // Replace with actual code to save to CSV
+
         // Convert data to CSV and save it
         const csvRow = [nameInput.value, ...questions.map((_, index) => data[`question${index}`])].join(',');
-        // Append this row to your CSV file
+        // Code to append this row to your CSV file
     }
 });
