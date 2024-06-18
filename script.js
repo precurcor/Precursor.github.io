@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('purityTestForm');
     const questionsContainer = document.getElementById('questions');
+    const resultContainer = document.getElementById('result');
     const questions = [
         "Held hands romantically?",
         "Been on a date?",
@@ -50,9 +51,19 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
         const formData = new FormData(form);
         const data = {};
+        let checkedCount = 0;
+
         formData.forEach((value, key) => {
             data[key] = value === 'on';
+            if (value === 'on') checkedCount++;
         });
+
+        // Calculate purity percentage
+        const totalQuestions = questions.length;
+        const purityPercentage = ((totalQuestions - checkedCount) / totalQuestions) * 100;
+
+        // Display result
+        resultContainer.textContent = `Your purity score is ${purityPercentage.toFixed(2)}%`;
 
         // Convert data to CSV and save it
         const csvRow = [nameInput.value, ...questions.map((_, index) => data[`question${index}`])].join(',');
