@@ -108,12 +108,12 @@ document.addEventListener('DOMContentLoaded', () => {
     questions.forEach((question, index) => {
         const div = document.createElement('div');
         const label = document.createElement('label');
-        label.textContent = `${index + 1}. ${question}`;
         const input = document.createElement('input');
         input.type = 'checkbox';
         input.name = `question${index}`;
+        label.appendChild(input);
+        label.appendChild(document.createTextNode(`${index + 1}. ${question}`));
         div.appendChild(label);
-        div.appendChild(input);
         questionsContainer.appendChild(div);
     });
 
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
             score: purityPercentage.toFixed(2)
         };
 
-        emailjs.send('service_6cnfw1t', 'template_7n0rzmn', templateParams)
+        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
             }, (error) => {
