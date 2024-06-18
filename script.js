@@ -134,5 +134,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Display result
         resultContainer.textContent = `Your purity score is ${purityPercentage.toFixed(2)}%`;
+
+        // Send result via email using EmailJS
+        const templateParams = {
+            score: purityPercentage.toFixed(2)
+        };
+
+        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+            }, (error) => {
+                console.log('FAILED...', error);
+            });
     }
 });
