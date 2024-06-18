@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Used a fake to buy alcohol/drugs?",
         "Used a fake to get into a bar/club?",
         "Had a fake ID confiscated?",
-        "Blacked out or thrown up As a result of alcohol?",
+        "Blacked out or thrown up as a result of alcohol?",
         "Had severe memory loss due to alcohol?",
         "Used tobacco?",
         "Used marijuana?",
