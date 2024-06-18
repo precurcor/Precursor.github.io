@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Seen or read pornographic material?",
         "Paid for any porn?",
         "Watched porn with mps?",
-        "Posted a thirst trap?"
+        "Posted a thirst trap?",
         "Massaged or been massaged sensually?",
         "'Talked' to 5 or more people at once?",
         "kissed 5 or more people in one night?",
@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Ingested alcohol in a non-religious context?",
         "Played a drinking game?",
         "Been drunk?",
+        "?",
         "Flirted with a stranger to get a free drink?",
         "Faked sobriety to parents or teachers?",
         "Had a fake ID?",
