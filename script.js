@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
             score: purityPercentage.toFixed(2)
         };
 
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        emailjs.send('service_6cnfw1t', 'template_7n0rzmn', templateParams)
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
             }, (error) => {
