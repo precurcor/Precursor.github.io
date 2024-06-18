@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Had sexual intercourse in public?",
         "Had sexual intercourse in a swimming pool or hot tub?",
         "Had sexual intercourse in a bed not belonging to you or your partner?",
-        "Had sexual intercourse with someone who was also in a relationship?",
+        "Had sexual intercourse with someone who was in a relationship, not with you?",
         "Had sexual intercourse while you or your partner’s parents were in the same home?",
         "Had sexual intercourse with non-participating third party in the same room?",
         "Joined the mile high club?",
