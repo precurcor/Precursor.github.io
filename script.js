@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Paid for any porn?",
         "Watched porn with mps?",
         "Posted a thirst trap?",
+        "Intentionally gas-lit/manipulated someone?",
         "Massaged or been massaged sensually?",
         "'Talked' to 5 or more people at once?",
         "kissed 5 or more people in one night?",
@@ -70,8 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "Stalked someone’s snapchat location?",
         "Ingested alcohol in a non-religious context?",
         "Played a drinking game?",
-        "Been drunk?",
         "?",
+        "Been drunk?",
         "Flirted with a stranger to get a free drink?",
         "Faked sobriety to parents or teachers?",
         "Had a fake ID?",
@@ -141,11 +142,15 @@ document.addEventListener('DOMContentLoaded', () => {
         "Had a pregnancy scare?",
         "Impregnated someone or been impregnated?",
         "Paid or been paid for a sexual act?",
+        "Illegally pirated content?",
         "Committed an act of voyeurism?",
-        "Committed an act of incest?",
+        "Constructed an illegal device for malicious intent?",
+        "Plagiarised significant content?",
         "Texted while driving?",
         "Driven under the influence?",
-        "Engaged in bestiality?"
+        "Engaged in bestiality?",
+        "Committed an act of incest?",
+        "Committed murder?"
     ];
 
     // Generate questions dynamically
