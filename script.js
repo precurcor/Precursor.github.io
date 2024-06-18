@@ -155,6 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Committed murder?"
     ];
 
+
     // Generate questions dynamically
     questions.forEach((question, index) => {
         const div = document.createElement('div');
